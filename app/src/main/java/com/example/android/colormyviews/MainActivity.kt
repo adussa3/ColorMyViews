@@ -10,10 +10,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
+
+        //
         setListeners()
     }
 
+    /**
+     *
+     */
     private fun setListeners() {
         val clickableViews: List<View> = listOf(box_one_text, box_two_text,
                 box_three_text, box_four_text, box_five_text, constraint_layout,
@@ -26,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     *
+     */
     private fun makeColored(view: View) {
         when (view.id) {
             // Boxes using Color class colors for background
